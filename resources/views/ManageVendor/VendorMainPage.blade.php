@@ -124,7 +124,7 @@
                                 <!-- input Price -->
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Price</label>
-                                    <input name="Price" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter product price"required>
+                                    <input name="Price" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter product price" required pattern="\d+(\.\d{2})?" title="Please enter a valid numeric value (e.g., 20 or 20.00)">
                                 </div>
 
                                 <!-- input other information -->
