@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -25,11 +25,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'matric_id',
-        'phoneNumber',
         'email',
         'password',
-        'role_id',
     ];
 
     /**
@@ -61,14 +58,4 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-
-    public function student()
-    {
-        return $this->hasOne(Student::class);
-    }
-
-    public function supervisor()
-    {
-        return $this->hasOne(Supervisor::class);
-    }
 }
