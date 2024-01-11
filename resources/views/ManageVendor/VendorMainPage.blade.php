@@ -99,7 +99,8 @@
                                 <!-- input Phone -->         
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                                    <input name="Phone" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter vendor phone"required>
+                                    <input name="Phone" type="text" pattern="[0-9]+" class="form-control" id="exampleFormControlInput1" placeholder="Enter vendor phone" required>
+                                    <small class="text-muted">Only numbers are allowed.</small>
                                 </div>
 
                                 <!-- input Email -->
